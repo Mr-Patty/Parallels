@@ -1,0 +1,320 @@
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 5747: <./a.out 100 100 100 0.000001 100 1 0> in cluster <MSUCluster> Done
+
+Job <./a.out 100 100 100 0.000001 100 1 0> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-pv18-524-24> in cluster <MSUCluster> at Mon Oct 22 18:55:18 2018
+Job was executed on host(s) <10*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-pv18-524-24> in cluster <MSUCluster> at Mon Oct 22 18:55:18 2018
+</home_edu/edu-cmc-pv18-524/edu-cmc-pv18-524-24> was used as the home directory.
+</home_edu/edu-cmc-pv18-524/edu-cmc-pv18-524-24/BiCGSTAB_openmp> was used as the working directory.
+Started at Mon Oct 22 18:55:18 2018
+Terminated at Mon Oct 22 19:01:48 2018
+Results reported at Mon Oct 22 19:01:48 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./a.out 100 100 100 0.000001 100 1 0
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1131.96 sec.
+    Max Memory :                                 364 MB
+    Average Memory :                             296.23 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                13
+    Run time :                                   395 sec.
+    Turnaround time :                            390 sec.
+
+The output (if any) follows:
+
+testing sequential ops (N = ):
+Sequential ops timing: (N = 1000)
+dot time=0.00001s GFLOPS=  0.15
+axpy time=0.00002s GFLOPS=  0.16
+SpMV time=0.00090s GFLOPS=  0.01
+solver time =  0.055s
+testing parallel ops for ntr=2:
+dot time=0.00001s GFLOPS=  0.24 Speedup=  1.63X 
+axpy time=0.00001s GFLOPS=  0.29 Speedup=  1.77X 
+SpMV time=0.00052s GFLOPS=  0.02 Speedup=  1.73X 
+solver time =  0.032s
+testing parallel ops for ntr=4:
+dot time=0.00001s GFLOPS=  0.31 Speedup=  2.12X 
+axpy time=0.00001s GFLOPS=  0.41 Speedup=  2.47X 
+SpMV time=0.00029s GFLOPS=  0.03 Speedup=  3.10X 
+solver time =  0.018s
+testing parallel ops for ntr=6:
+dot time=0.00001s GFLOPS=  0.29 Speedup=  1.95X 
+axpy time=0.00001s GFLOPS=  0.40 Speedup=  2.40X 
+SpMV time=0.00020s GFLOPS=  0.05 Speedup=  4.48X 
+solver time =  0.013s
+testing parallel ops for ntr=8:
+dot time=0.00001s GFLOPS=  0.24 Speedup=  1.63X 
+axpy time=0.00001s GFLOPS=  0.34 Speedup=  2.06X 
+SpMV time=0.00016s GFLOPS=  0.06 Speedup=  5.71X 
+solver time =  0.011s
+testing parallel ops for ntr=10:
+dot time=0.00001s GFLOPS=  0.20 Speedup=  1.33X 
+axpy time=0.00001s GFLOPS=  0.28 Speedup=  1.73X 
+SpMV time=0.00013s GFLOPS=  0.07 Speedup=  6.78X 
+solver time =  0.010s
+
+Sequential ops timing: (N = 10000)
+dot time=0.00013s GFLOPS=  0.15
+axpy time=0.00018s GFLOPS=  0.17
+SpMV time=0.00901s GFLOPS=  0.01
+solver time =  0.473s
+testing parallel ops for ntr=2:
+dot time=0.00007s GFLOPS=  0.30 Speedup=  1.97X 
+axpy time=0.00009s GFLOPS=  0.33 Speedup=  1.98X 
+SpMV time=0.00523s GFLOPS=  0.02 Speedup=  1.72X 
+solver time =  0.275s
+testing parallel ops for ntr=4:
+dot time=0.00004s GFLOPS=  0.53 Speedup=  3.44X 
+axpy time=0.00005s GFLOPS=  0.59 Speedup=  3.50X 
+SpMV time=0.00303s GFLOPS=  0.03 Speedup=  2.97X 
+solver time =  0.154s
+testing parallel ops for ntr=6:
+dot time=0.00003s GFLOPS=  0.74 Speedup=  4.77X 
+axpy time=0.00004s GFLOPS=  0.83 Speedup=  4.89X 
+SpMV time=0.00210s GFLOPS=  0.05 Speedup=  4.29X 
+solver time =  0.107s
+testing parallel ops for ntr=8:
+dot time=0.00002s GFLOPS=  0.82 Speedup=  5.30X 
+axpy time=0.00003s GFLOPS=  0.95 Speedup=  5.61X 
+SpMV time=0.00165s GFLOPS=  0.06 Speedup=  5.45X 
+solver time =  0.084s
+testing parallel ops for ntr=10:
+dot time=0.00002s GFLOPS=  0.89 Speedup=  5.79X 
+axpy time=0.00003s GFLOPS=  1.10 Speedup=  6.50X 
+SpMV time=0.00129s GFLOPS=  0.08 Speedup=  6.99X 
+solver time =  0.071s
+
+Sequential ops timing: (N = 100000)
+dot time=0.00129s GFLOPS=  0.16
+axpy time=0.00177s GFLOPS=  0.17
+SpMV time=0.09677s GFLOPS=  0.01
+solver time =  5.361s
+testing parallel ops for ntr=2:
+dot time=0.00065s GFLOPS=  0.31 Speedup=  1.99X 
+axpy time=0.00090s GFLOPS=  0.34 Speedup=  1.98X 
+SpMV time=0.05428s GFLOPS=  0.02 Speedup=  1.78X 
+solver time =  3.022s
+testing parallel ops for ntr=4:
+dot time=0.00034s GFLOPS=  0.59 Speedup=  3.82X 
+axpy time=0.00046s GFLOPS=  0.65 Speedup=  3.83X 
+SpMV time=0.03284s GFLOPS=  0.04 Speedup=  2.95X 
+solver time =  1.710s
+testing parallel ops for ntr=6:
+dot time=0.00023s GFLOPS=  0.87 Speedup=  5.62X 
+axpy time=0.00031s GFLOPS=  0.97 Speedup=  5.72X 
+SpMV time=0.02119s GFLOPS=  0.06 Speedup=  4.57X 
+solver time =  1.183s
+testing parallel ops for ntr=8:
+dot time=0.00017s GFLOPS=  1.16 Speedup=  7.46X 
+axpy time=0.00023s GFLOPS=  1.30 Speedup=  7.68X 
+SpMV time=0.01637s GFLOPS=  0.08 Speedup=  5.91X 
+solver time =  0.927s
+testing parallel ops for ntr=10:
+dot time=0.00014s GFLOPS=  1.38 Speedup=  8.90X 
+axpy time=0.00019s GFLOPS=  1.54 Speedup=  9.10X 
+SpMV time=0.01389s GFLOPS=  0.10 Speedup=  6.97X 
+solver time =  0.781s
+
+Sequential ops timing: (N = 1000000)
+dot time=0.01287s GFLOPS=  0.16
+axpy time=0.01771s GFLOPS=  0.17
+SpMV time=0.97380s GFLOPS=  0.01
+solver time = 42.305s
+testing parallel ops for ntr=2:
+dot time=0.00650s GFLOPS=  0.31 Speedup=  1.98X 
+axpy time=0.00894s GFLOPS=  0.34 Speedup=  1.98X 
+SpMV time=0.54365s GFLOPS=  0.03 Speedup=  1.79X 
+solver time = 23.770s
+testing parallel ops for ntr=4:
+dot time=0.00329s GFLOPS=  0.61 Speedup=  3.92X 
+axpy time=0.00453s GFLOPS=  0.66 Speedup=  3.91X 
+SpMV time=0.32223s GFLOPS=  0.04 Speedup=  3.02X 
+solver time = 14.577s
+testing parallel ops for ntr=6:
+dot time=0.00221s GFLOPS=  0.90 Speedup=  5.82X 
+axpy time=0.00306s GFLOPS=  0.98 Speedup=  5.79X 
+SpMV time=0.20970s GFLOPS=  0.07 Speedup=  4.64X 
+solver time =  9.289s
+testing parallel ops for ntr=8:
+dot time=0.00176s GFLOPS=  1.13 Speedup=  7.30X 
+axpy time=0.00244s GFLOPS=  1.23 Speedup=  7.26X 
+SpMV time=0.16392s GFLOPS=  0.08 Speedup=  5.94X 
+solver time =  7.328s
+testing parallel ops for ntr=10:
+dot time=0.00137s GFLOPS=  1.46 Speedup=  9.37X 
+axpy time=0.00190s GFLOPS=  1.58 Speedup=  9.31X 
+SpMV time=0.13690s GFLOPS=  0.10 Speedup=  7.11X 
+solver time =  6.103s
+
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 5748: <./a.out 100 100 100 0.000001 100 1 0> in cluster <MSUCluster> Done
+
+Job <./a.out 100 100 100 0.000001 100 1 0> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-pv18-524-24> in cluster <MSUCluster> at Mon Oct 22 19:05:32 2018
+Job was executed on host(s) <10*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-pv18-524-24> in cluster <MSUCluster> at Mon Oct 22 19:05:33 2018
+</home_edu/edu-cmc-pv18-524/edu-cmc-pv18-524-24> was used as the home directory.
+</home_edu/edu-cmc-pv18-524/edu-cmc-pv18-524-24/BiCGSTAB_openmp> was used as the working directory.
+Started at Mon Oct 22 19:05:33 2018
+Terminated at Mon Oct 22 19:15:41 2018
+Results reported at Mon Oct 22 19:15:41 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./a.out 100 100 100 0.000001 100 1 0
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   3589.48 sec.
+    Max Memory :                                 364 MB
+    Average Memory :                             292.55 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                13
+    Run time :                                   608 sec.
+    Turnaround time :                            609 sec.
+
+The output (if any) follows:
+
+testing sequential ops (N = ):
+Sequential ops timing: (N = 1000)
+dot time=0.00000s GFLOPS=  0.92
+axpy time=0.00000s GFLOPS=  1.90
+SpMV time=0.00170s GFLOPS=  0.01
+solver time =  0.102s
+testing parallel ops for ntr=2:
+dot time=0.00000s GFLOPS=  0.52 Speedup=  0.57X 
+axpy time=0.00000s GFLOPS=  1.40 Speedup=  0.74X 
+SpMV time=0.00085s GFLOPS=  0.01 Speedup=  2.00X 
+solver time =  0.051s
+testing parallel ops for ntr=4:
+dot time=0.00000s GFLOPS=  0.52 Speedup=  0.56X 
+axpy time=0.00000s GFLOPS=  1.20 Speedup=  0.63X 
+SpMV time=0.00069s GFLOPS=  0.01 Speedup=  2.47X 
+solver time =  0.042s
+testing parallel ops for ntr=6:
+dot time=0.00000s GFLOPS=  0.47 Speedup=  0.51X 
+axpy time=0.00000s GFLOPS=  1.07 Speedup=  0.56X 
+SpMV time=0.00046s GFLOPS=  0.02 Speedup=  3.67X 
+solver time =  0.019s
+testing parallel ops for ntr=8:
+dot time=0.00000s GFLOPS=  0.47 Speedup=  0.51X 
+axpy time=0.00000s GFLOPS=  1.12 Speedup=  0.59X 
+SpMV time=0.00034s GFLOPS=  0.03 Speedup=  4.96X 
+solver time =  0.021s
+testing parallel ops for ntr=10:
+dot time=0.00000s GFLOPS=  0.46 Speedup=  0.50X 
+axpy time=0.00000s GFLOPS=  1.05 Speedup=  0.55X 
+SpMV time=0.00041s GFLOPS=  0.02 Speedup=  4.10X 
+solver time =  0.025s
+
+Sequential ops timing: (N = 10000)
+dot time=0.00001s GFLOPS=  3.20
+axpy time=0.00001s GFLOPS=  3.76
+SpMV time=0.01802s GFLOPS=  0.01
+solver time =  0.969s
+testing parallel ops for ntr=2:
+dot time=0.00001s GFLOPS=  3.06 Speedup=  0.96X 
+axpy time=0.00001s GFLOPS=  3.92 Speedup=  1.04X 
+SpMV time=0.01016s GFLOPS=  0.01 Speedup=  1.77X 
+solver time =  0.520s
+testing parallel ops for ntr=4:
+dot time=0.00001s GFLOPS=  3.88 Speedup=  1.21X 
+axpy time=0.00000s GFLOPS=  6.35 Speedup=  1.69X 
+SpMV time=0.00531s GFLOPS=  0.02 Speedup=  3.39X 
+solver time =  0.251s
+testing parallel ops for ntr=6:
+dot time=0.00001s GFLOPS=  3.94 Speedup=  1.23X 
+axpy time=0.00000s GFLOPS=  7.57 Speedup=  2.01X 
+SpMV time=0.00328s GFLOPS=  0.03 Speedup=  5.49X 
+solver time =  0.169s
+testing parallel ops for ntr=8:
+dot time=0.00000s GFLOPS=  4.41 Speedup=  1.38X 
+axpy time=0.00000s GFLOPS=  8.05 Speedup=  2.14X 
+SpMV time=0.00245s GFLOPS=  0.04 Speedup=  7.37X 
+solver time =  0.130s
+testing parallel ops for ntr=10:
+dot time=0.00000s GFLOPS=  4.38 Speedup=  1.37X 
+axpy time=0.00000s GFLOPS=  8.34 Speedup=  2.22X 
+SpMV time=0.00197s GFLOPS=  0.05 Speedup=  9.14X 
+solver time =  0.104s
+
+Sequential ops timing: (N = 100000)
+dot time=0.00005s GFLOPS=  3.76
+axpy time=0.00008s GFLOPS=  3.58
+SpMV time=0.15966s GFLOPS=  0.01
+solver time =  9.551s
+testing parallel ops for ntr=2:
+dot time=0.00003s GFLOPS=  7.17 Speedup=  1.91X 
+axpy time=0.00004s GFLOPS=  7.88 Speedup=  2.20X 
+SpMV time=0.09808s GFLOPS=  0.01 Speedup=  1.63X 
+solver time =  5.010s
+testing parallel ops for ntr=4:
+dot time=0.00002s GFLOPS= 11.86 Speedup=  3.16X 
+axpy time=0.00002s GFLOPS= 14.24 Speedup=  3.98X 
+SpMV time=0.04619s GFLOPS=  0.03 Speedup=  3.46X 
+solver time =  2.794s
+testing parallel ops for ntr=6:
+dot time=0.00001s GFLOPS= 13.86 Speedup=  3.69X 
+axpy time=0.00002s GFLOPS= 19.65 Speedup=  5.49X 
+SpMV time=0.03333s GFLOPS=  0.04 Speedup=  4.79X 
+solver time =  1.858s
+testing parallel ops for ntr=8:
+dot time=0.00001s GFLOPS= 15.74 Speedup=  4.19X 
+axpy time=0.00001s GFLOPS= 24.05 Speedup=  6.72X 
+SpMV time=0.02455s GFLOPS=  0.06 Speedup=  6.50X 
+solver time =  1.384s
+testing parallel ops for ntr=10:
+dot time=0.00001s GFLOPS= 16.18 Speedup=  4.31X 
+axpy time=0.00001s GFLOPS= 27.82 Speedup=  7.77X 
+SpMV time=0.01952s GFLOPS=  0.07 Speedup=  8.18X 
+solver time =  1.103s
+
+Sequential ops timing: (N = 1000000)
+dot time=0.00073s GFLOPS=  2.76
+axpy time=0.00092s GFLOPS=  3.25
+SpMV time=1.71973s GFLOPS=  0.01
+solver time = 76.089s
+testing parallel ops for ntr=2:
+dot time=0.00035s GFLOPS=  5.76 Speedup=  2.09X 
+axpy time=0.00042s GFLOPS=  7.11 Speedup=  2.19X 
+SpMV time=0.87847s GFLOPS=  0.02 Speedup=  1.96X 
+solver time = 36.780s
+testing parallel ops for ntr=4:
+dot time=0.00016s GFLOPS= 12.16 Speedup=  4.41X 
+axpy time=0.00019s GFLOPS= 16.09 Speedup=  4.96X 
+SpMV time=0.43169s GFLOPS=  0.03 Speedup=  3.98X 
+solver time = 18.955s
+testing parallel ops for ntr=6:
+dot time=0.00012s GFLOPS= 17.04 Speedup=  6.18X 
+axpy time=0.00012s GFLOPS= 24.15 Speedup=  7.44X 
+SpMV time=0.28366s GFLOPS=  0.05 Speedup=  6.06X 
+solver time = 12.490s
+testing parallel ops for ntr=8:
+dot time=0.00010s GFLOPS= 20.15 Speedup=  7.31X 
+axpy time=0.00009s GFLOPS= 31.64 Speedup=  9.74X 
+SpMV time=0.24672s GFLOPS=  0.06 Speedup=  6.97X 
+solver time = 10.907s
+testing parallel ops for ntr=10:
+dot time=0.00008s GFLOPS= 24.53 Speedup=  8.90X 
+axpy time=0.00008s GFLOPS= 39.09 Speedup= 12.04X 
+SpMV time=0.19760s GFLOPS=  0.07 Speedup=  8.70X 
+solver time =  8.710s
+
